@@ -6,40 +6,91 @@ body {
     background: #353333;
     display: flex;
     position: fixed;
+    align-items: center;
     width: 100%;
-    overflow: auto;
-    height: 18%;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
+}
+.nav-column {
+  display: flex;
+  align-items: center;
+}
+div.nav-column {
+  flex-grow: 1;
 }
 .navbar-logo {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    width: 10%;
+    width: 100px;
+    height: 100px;
 }
-span.title {
+.title {
     font-family: 'Source Code Pro', monospace, sans-serif;
     font-size: 2.5em;
     color: #FCF9F9;
-    position: absolute;
-    left: 12%;
-    top: 7%;
 }
-.fa {
+.fa-brands {
     padding: 20px;
     font-size: 30px;
     width: 30px;
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
-    position: absolute;
-    left: 90%;
-    top: 30%;
+    margin-right: 1em;
   }
-  .fa:hover {
-    opacity: 0.7;
-  }
+.fa-brands:hover, .fa-brands:focus {
+  opacity: 0.7;
+}
 .fa-instagram {
-    background: #FB7474;
+    background: #FF766C;
     color: white;
   }
+.main {
+  padding-top: 7.5em;
+}
+.footer {
+  background: #FF766C;
+  display: flex;
+  width: 100%;
+  padding: 0.5em 1em;
+  font-family: 'Red Hat Mono', monospace, sans-serif;
+}
+.footer-img {
+  margin: 3em 15em 2em 2em;
+}
+.second-footer {
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  margin: 5em 0em 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-icons a {
+  padding: 10px;
+  font-size: 3em;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 1em;
+  background: #FCF9F9;
+  color: #353333;
+  width: auto;
+}
+.footer-icons a:hover, .fa-brands:focus {
+  color:#FF766C;
+}
+.confetti {
+  position: fixed;
+  background-color: red;
+  width: 3px;
+  height: 3px;
+  background-size: cover;
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .main {
+    padding-top: 7em;
+  }
+}
+#message {
+  height: 5em;
+}
