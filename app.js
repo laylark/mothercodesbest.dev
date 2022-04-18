@@ -153,3 +153,21 @@ function autoClick() {
 autoClick();
 setCanvasSize();
 window.addEventListener("resize", setCanvasSize, false);
+
+// The following allows animations to occur while scrolling
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".main-end");
+
+    if (entry.isIntersecting) {
+      square.classList.add("line-break");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("line-break");
+  });
+});
+
+observer.observe(document.querySelector(".hr-wrapper"));
