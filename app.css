@@ -99,6 +99,22 @@ div.nav-column {
   .main {
     padding-top: 7em;
   }
+  .footer {
+    flex-direction: column;
+  }
+  .second-footer {
+    font-size: 0.5em;
+    flex-direction: column-reverse;
+  }
+  .footer-icons {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-icons a {
+    margin-right: 0.2em;
+  }
 }
 #message {
   height: 5em;
