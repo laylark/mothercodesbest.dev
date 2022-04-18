@@ -1,62 +1,77 @@
 body {
-    background: #FCF9F9;
-    margin: 0;
+  background: #fcf9f9;
+  margin: 0;
+}
+.fireworks {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .navbar {
-    background: #353333;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    width: 100%;
-    padding: 0.5em 1em;
+  background: #353333;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  padding: 0.5em 1em;
+  overflow: hidden;
 }
 .nav-column {
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 div.nav-column {
   flex-grow: 1;
 }
-.navbar-logo {
-    width: 100px;
-    height: 100px;
-}
 .title {
-    font-family: 'Source Code Pro', monospace, sans-serif;
-    font-size: 2.5em;
-    color: #FCF9F9;
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: 2.5em;
+  color: #fcf9f9;
 }
 .fa-brands {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 1em;
-  }
-.fa-brands:hover, .fa-brands:focus {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 1em;
+}
+.fa-brands:hover,
+.fa-brands:focus {
   opacity: 0.7;
 }
 .fa-instagram {
-    background: #FF766C;
-    color: white;
-  }
+  background: #18ff92;
+  color: white;
+}
+.fa-solid {
+  font-size: 50px;
+  padding-right: 0.5em;
+}
+.fa-laptop-code {
+  color: #ff1461;
+}
+.fa-laptop-code:hover,
+.fa-brands:focus {
+  color: #fbf38c;
+}
 .main {
-  padding-top: 7.5em;
+  padding: 7.5em 3em 2em 3em;
 }
 .footer {
-  background: #FF766C;
+  background: #5a87ff;
   display: flex;
   width: 100%;
-  padding: 0.5em 1em;
-  font-family: 'Red Hat Mono', monospace, sans-serif;
+  padding: 0.5em 2em;
+  font-family: "Red Hat Mono", monospace, sans-serif;
 }
 .footer-img {
   margin: 3em 15em 2em 2em;
 }
 .second-footer {
-  font-family: 'Source Code Pro', monospace, sans-serif;
+  font-family: "Source Code Pro", monospace, sans-serif;
   margin: 5em 0em 1em 3em;
   display: flex;
   justify-content: space-between;
@@ -69,19 +84,13 @@ div.nav-column {
   text-align: center;
   text-decoration: none;
   margin-right: 1em;
-  background: #FCF9F9;
+  background: #fcf9f9;
   color: #353333;
   width: auto;
 }
-.footer-icons a:hover, .fa-brands:focus {
-  color:#FF766C;
-}
-.confetti {
-  position: fixed;
-  background-color: red;
-  width: 3px;
-  height: 3px;
-  background-size: cover;
+.footer-icons a:hover,
+.fa-brands:focus {
+  color: #ff1461;
 }
 @media (max-width: 480px) {
   .title {
