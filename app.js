@@ -12,7 +12,7 @@ var tap =
   "ontouchstart" in window || navigator.msMaxTouchPoints
     ? "touchstart"
     : "mousedown";
-var colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"];
+var colors = ["#FF1461", "#64FFDA", "#5A87FF", "#FBF38C"];
 
 var navbar = document.getElementById("navbar");
 var navbarHeight = navbar.offsetHeight;

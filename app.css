@@ -1,6 +1,7 @@
 body {
-  background: #fcf9f9;
+  background: #0b192e;
   margin: 0;
+  color: #8893af;
 }
 .fireworks {
   position: absolute;
@@ -8,7 +9,7 @@ body {
   top: 0;
 }
 .navbar {
-  background: #353333;
+  background: #0b192e;
   display: flex;
   position: fixed;
   align-items: center;
@@ -27,7 +28,7 @@ div.nav-column {
 .title {
   font-family: "Source Code Pro", monospace, sans-serif;
   font-size: 2.5em;
-  color: #fcf9f9;
+  color: #ccd7f5;
 }
 .fa-brands {
   padding: 20px;
@@ -43,7 +44,7 @@ div.nav-column {
   opacity: 0.7;
 }
 .fa-instagram {
-  background: #18ff92;
+  background: #64ffda;
   color: white;
 }
 .fa-solid {
@@ -59,33 +60,85 @@ div.nav-column {
 }
 .main {
   padding: 7.5em 3em 2em 3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.second-header {
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: 18px;
+  color: #8893af;
+}
+.laylaKrauss {
+  font-family: "Anybody", Verdana, sans-serif;
+  font-size: 60px;
+  color: #ccd7f5;
+  margin: 0;
+  padding: 0.2em;
+}
+.fade {
+  color: #8893af;
+}
+.code {
+  font-family: "Source Code Pro", monospace, sans-serif;
 }
 .footer {
-  background: #5a87ff;
   display: flex;
+  align-content: center;
   width: 100%;
-  padding: 0.5em 2em;
-  font-family: "Red Hat Mono", monospace, sans-serif;
+  padding: 0.5em 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-content {
+  width: 100%;
+}
+.discover {
+  padding-left: 5em;
+}
+.connect {
+  padding.right: 5em;
+}
+.footer-title {
+  font-size: 2em;
+  font-family: "Source Code Pro", monospace, sans-serif;
 }
 .footer-img {
-  margin: 3em 15em 2em 2em;
+  padding: 13.5em 0;
+  margin: 3em;
+  width: 100%;
+  background: no-repeat;
+  background-image: linear-gradient(
+      75deg,
+      rgba(72, 185, 166, 0.3),
+      rgba(72, 185, 166, 1)
+    ),
+    url("images/headshot.JPG");
+  border-radius: 1em;
 }
 .second-footer {
   font-family: "Source Code Pro", monospace, sans-serif;
   margin: 5em 0em 1em 3em;
+  color: #ccd7f5;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  font-size: 14px;
+}
+#message {
+  height: 5em;
 }
 .footer-icons a {
   padding: 10px;
-  font-size: 3em;
+  font-size: 4em;
   border-radius: 100%;
   text-align: center;
   text-decoration: none;
   margin-right: 1em;
-  background: #fcf9f9;
-  color: #353333;
+  background: #0b192e;
+  color: #ccd7f5;
   width: auto;
 }
 .footer-icons a:hover,
@@ -115,7 +168,4 @@ div.nav-column {
   .footer-icons a {
     margin-right: 0.2em;
   }
-}
-#message {
-  height: 5em;
 }
