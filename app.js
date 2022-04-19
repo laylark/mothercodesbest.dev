@@ -151,9 +151,18 @@ function autoClick() {
 }
 
 autoClick();
+
+// Set the canvas size on page load and again after
+// a short wait, to allow other height-determining
+// assets to load in.
+setCanvasSize();
 setTimeout(() => {
   setCanvasSize();
-}, 100);
+}, 500);
+setTimeout(() => {
+  setCanvasSize();
+}, 1500);
+
 window.addEventListener("resize", setCanvasSize, false);
 
 // The following allows animations to occur while scrolling
