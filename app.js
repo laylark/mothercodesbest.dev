@@ -151,7 +151,9 @@ function autoClick() {
 }
 
 autoClick();
-setCanvasSize();
+setTimeout(() => {
+  setCanvasSize();
+}, 100);
 window.addEventListener("resize", setCanvasSize, false);
 
 // The following allows animations to occur while scrolling
