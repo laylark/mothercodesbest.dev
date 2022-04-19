@@ -1,36 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #0b192e;
   margin: 0;
   color: #8893af;
 }
+
+.mt {
+  margin-top: 2em;
+}
+
 .fireworks {
   position: absolute;
   left: 0;
   top: 0;
 }
-.navbar {
-  background: #0b192e;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  width: 100%;
-  padding: 0.5em 1em;
-  overflow: hidden;
-}
-.nav-column {
-  display: flex;
-  align-items: center;
-  z-index: 100;
-}
-div.nav-column {
-  flex-grow: 1;
-}
-.title {
-  font-family: "Source Code Pro", monospace, sans-serif;
-  font-size: 2.5em;
-  color: #ccd7f5;
-}
-.fa-brands {
+
+.brand-icon {
+  box-sizing: content-box;
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -39,39 +28,62 @@ div.nav-column {
   text-decoration: none;
   margin-right: 1em;
 }
-.fa-brands:hover,
-.fa-brands:focus {
-  opacity: 0.7;
+
+.navbar {
+  background: #0b192e;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
 }
-.fa-instagram {
+.nav-content {
+  display: flex;
+  padding: 0.5em 1em;
+  align-items: center;
+}
+.nav-column {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.nav-content .nav-column:first-child {
+  flex-grow: 1;
+}
+.title {
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: 2.5em;
+  color: #ccd7f5;
+}
+.navbar .brand-icon {
   background: #64ffda;
   color: white;
+  margin: 0;
 }
-.fa-solid {
+.navbar .brand-icon:hover,
+.navbar .brand-icon:focus {
+  opacity: 0.7;
+}
+
+.logo-icon {
   font-size: 50px;
   padding-right: 0.5em;
-}
-.fa-laptop-code {
   color: #ff1461;
 }
-.fa-laptop-code:hover,
-.fa-brands:focus {
+.logo-icon:hover,
+.logo-icon:focus {
   color: #fbf38c;
 }
+
 .main {
   padding: 9em 5em 2em 5em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
 }
 .second-header {
   font-family: "Source Code Pro", monospace, sans-serif;
   font-size: 18px;
   color: #8893af;
 }
-.laylaKrauss {
+.layla-krauss {
   font-family: "Anybody", Verdana, sans-serif;
   font-size: 60px;
   color: #ccd7f5;
@@ -87,7 +99,8 @@ div.nav-column {
 .about {
   width: 75%;
 }
-hr.main-end {
+
+.main-end {
   margin-inline: 3em;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -103,9 +116,9 @@ hr.main-end {
     margin-inline: 3em;
   }
 }
+
 .footer {
   display: flex;
-  align-content: center;
   width: 100%;
   padding: 2em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -119,7 +132,6 @@ hr.main-end {
 }
 .connect {
   padding-right: 7em;
-  box-sizing: border-box;
 }
 .footer-title {
   font-size: 2em;
@@ -130,13 +142,12 @@ hr.main-end {
 }
 .footer-img {
   width: 300px;
-  background: no-repeat;
   border-radius: 1em;
 }
-#email,
-#fname,
-#lname,
-#message {
+.form-group {
+  margin-bottom: 1em;
+}
+.form-control {
   display: block;
   border: none;
   border-radius: 0.5em;
@@ -145,9 +156,6 @@ hr.main-end {
   margin: auto;
   font-family: inherit;
   font-size: 1em;
-}
-#message {
-  height: 5em;
 }
 .second-footer {
   font-family: "Source Code Pro", monospace, sans-serif;
@@ -169,8 +177,8 @@ hr.main-end {
   color: #ccd7f5;
   width: auto;
 }
-.footer-icons a:hover,
-.fa-brands:focus {
+.footer-icons .brand-icon:hover,
+.footer-icons .brand-icon:focus {
   color: #ff1461;
 }
 @media (max-width: 480px) {
@@ -183,7 +191,7 @@ hr.main-end {
   .second-header {
     font-size: 1.5em;
   }
-  .laylaKrauss {
+  .layla-krauss {
     font-size: 2em;
   }
   .about {
@@ -200,14 +208,22 @@ hr.main-end {
   .footer-img-wrapper {
     padding: 3em;
   }
+  .footer-img {
+    max-width: 100%;
+  }
   .second-footer {
     font-size: 0.5em;
     flex-direction: column-reverse;
+    margin: 0 0 2em 0;
+    text-align: center;
+  }
+  .copyright {
+    width: 100%;
   }
   .footer-icons {
-    font-size: 2em;
+    font-size: 1.5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
   .footer-icons a {

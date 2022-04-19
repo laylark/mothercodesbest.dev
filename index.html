@@ -25,24 +25,26 @@
   <body>
     <header class="navbar" id="navbar">
       <canvas class="fireworks"></canvas>
-      <div class="nav-column">
-        <i class="fa-solid fa-laptop-code"></i>
-        <h1 class="title">Mother Codes Best</h1>
+      <div class="nav-content">
+        <div class="nav-column">
+          <i class="logo-icon fa-solid fa-laptop-code"></i>
+          <h1 class="title">Mother Codes Best</h1>
+        </div>
+        <aside class="nav-column">
+          <a
+            class="brand-icon fa-brands fa-instagram"
+            target="_blank"
+            href="https://www.instagram.com/mothercodesbest"
+            title="instagram"
+          >
+          </a>
+        </aside>
       </div>
-      <aside class="nav-column">
-        <a
-          class="fa-brands fa-instagram"
-          target="_blank"
-          href="https://www.instagram.com/mothercodesbest"
-          title="instagram"
-        >
-        </a>
-      </aside>
     </header>
     <main class="main">
       <h2 class="second-header">Hi, my name is</h2>
-      <p class="laylaKrauss">Layla Krauss.</p>
-      <p class="laylaKrauss fade">
+      <p class="layla-krauss">Layla Krauss.</p>
+      <p class="layla-krauss fade">
         I am learning to build cool things for the web and beyond. &#128640;
       </p>
       <p class="about">
@@ -52,12 +54,12 @@
         (90% of my job is calculations). After working on the application for a
         few days, I wanted to learn more. And, well, here I am!
       </p>
-      <p>
+      <p class="mt">
         Improving skills in
-        <span class="code"> HTML5</span>, <span class="code"> CSS</span>, and
-        vanilla <span class="code"> JavaScript</span>.
+        <span class="code">HTML5</span>, <span class="code">CSS</span>, and
+        vanilla <span class="code">JavaScript</span>.
       </p>
-      <p>Actively taking CS50x through Harvard.</p>
+      <p class="mt">Actively taking CS50x through Harvard.</p>
     </main>
     <div class="hr-wrapper">
       <hr class="main-end" />
@@ -75,7 +77,7 @@
         <img
           class="footer-img footer-content"
           src="images/headshot.JPG"
-          alt="headshot"
+          alt="Headshot of myself"
         />
       </div>
       <div class="footer-content connect">
@@ -84,43 +86,74 @@
           Want to learn more? Get in touch to work with me or simply say hello.
         </p>
         <form>
-          <label for="fname">First Name (required)</label><br />
-          <input type="text" id="fname" name="fname" required /><br />
-          <label for="lname">Last Name (required)</label><br />
-          <input type="text" id="lname" name="lname" required /><br />
-          <label for="email">Email Address (required)</label><br />
-          <input type="email" id="email" name="email" required /><br />
-          <label for="message">Message</label><br />
-          <input type="message" id="message" name="message" />
+          <div class="form-group">
+            <label for="fname">First Name (required)</label>
+            <input
+              class="form-control"
+              type="text"
+              id="fname"
+              name="fname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name (required)</label>
+            <input
+              class="form-control"
+              type="text"
+              id="lname"
+              name="lname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address (required)</label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              id="message"
+              name="message"
+            ></textarea>
+          </div>
         </form>
       </div>
     </footer>
     <div class="second-footer">
-      <p>&copy;2022 Layla Krauss. All Rights Reserved.</p>
+      <p class="copyright">&copy;2022 Layla Krauss. All Rights Reserved.</p>
       <div class="footer-icons">
         <a
-          class="fa-brands fa-instagram"
+          class="brand-icon fa-brands fa-instagram"
           target="_blank"
           href="https://www.instagram.com/mothercodesbest"
           title="instagram"
         >
         </a>
         <a
-          class="fa-brands fa-github"
+          class="brand-icon fa-brands fa-github"
           target="_blank"
           href="https://www.github.com/laylark"
           title="github"
         >
         </a>
         <a
-          class="fa-brands fa-jsfiddle"
+          class="brand-icon fa-brands fa-jsfiddle"
           target="_blank"
           href="https://jsfiddle.net/user/laylark/fiddles/"
           title="github"
         >
         </a>
         <a
-          class="fa-brands fa-linkedin-in"
+          class="brand-icon fa-brands fa-linkedin-in"
           target="_blank"
           href="https://www.linkedin.com/in/layla-krauss"
           title="github"
