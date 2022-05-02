@@ -41,6 +41,7 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&family=Source+Code+Pro:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
   </head>
   <body>
     <header class="navbar" id="navbar">
@@ -50,15 +51,31 @@
           <i class="logo-icon fa-solid fa-laptop-code"></i>
           <h1 class="title">Mother Codes Best</h1>
         </div>
-        <aside class="nav-column">
-          <a
-            class="brand-icon fa-brands fa-instagram"
-            target="_blank"
-            href="https://www.instagram.com/mothercodesbest"
-            title="instagram"
-          >
-          </a>
-        </aside>
+        <div class="nav-column">
+          <button class="hamburger hamburger--collapse is-active" type="button">
+            <!-- <i class="fas fa-bars"></i> -->
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-li">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-li"> 
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-li">  
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="btn-wrapper">
+            <button type="button" class="resume-btn">Resume</button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
