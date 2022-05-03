@@ -209,7 +209,8 @@ body {
 .footer-icons .brand-icon:focus {
   color: #ff1461;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 1085px) {
   .nav-list {
     display: none;
     flex-direction: column;
@@ -220,7 +221,11 @@ body {
     flex-direction: column;
   }
 }
-
+@media (max-width: 600px) {
+  .main {
+    padding: 10em 3em 2em 3em;
+  }
+}
 @media (max-width: 480px) {
   .title {
     font-size: 1.5em;
