@@ -165,13 +165,25 @@ setTimeout(() => {
 
 window.addEventListener("resize", setCanvasSize, false);
 
-// Look for .hamburger
+// Look for .hamburger and .nav-list
 const hamburger = document.querySelector(".hamburger");
+const navlist = document.querySelector(".nav-list");
 // On click
-hamburger.addEventListener("click", function() {
+hamburger.addEventListener("click", function () {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
   // Do something else, like open/close menu
+  if (navlist.classList.contains("is-active")) {
+    navlist.classList.toggle("is-active");
+    setTimeout(() => {
+      navlist.style.display = "none";
+    }, 500);
+  } else {
+    navlist.style.display = "flex";
+    setTimeout(() => {
+      navlist.classList.toggle("is-active");
+    }, 0);
+  }
 });
 
 // The following allows animations to occur while scrolling

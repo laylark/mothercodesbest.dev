@@ -62,6 +62,7 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
+  transition: opacity ease 0.5s;
 }
 .nav-li {
   display: flex;
@@ -227,15 +228,30 @@ body {
 @media (max-width: 1085px) {
   .nav-list {
     display: none;
+    opacity: 0;
     flex-direction: column;
     width: 100%;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(11, 25, 46, 0.9);
   }
+  .nav-list.is-active {
+    opacity: 1;
+  }
+
   .btn-wrapper {
     display: none;
     flex-direction: column;
   }
   .hamburger {
     display: inline-block;
+    z-index: 100;
   }
 }
 @media (max-width: 600px) {
