@@ -242,9 +242,8 @@ body {
     opacity: 1;
   }
 
-  .btn-wrapper {
-    display: none;
-    flex-direction: column;
+  .nav-li {
+    margin: 1.5em;
   }
   .hamburger {
     display: inline-block;
