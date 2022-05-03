@@ -29,6 +29,20 @@ body {
   margin-right: 1em;
 }
 
+.hamburger {
+  display: none;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #64ffda;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #64ffda;
+}
+
 .navbar {
   background: #0b192e;
   position: fixed;
@@ -56,10 +70,10 @@ body {
 .nav-link {
   text-decoration: none;
   font-family: "Source Code Pro", monospace, sans-serif;
-  color: #64FFDA;
+  color: #64ffda;
 }
 .nav-link:hover {
-  color:#ccd7f5;
+  color: #ccd7f5;
 }
 .btn-wrapper {
   display: flex;
@@ -68,10 +82,10 @@ body {
 .resume-btn {
   display: inline-block;
   padding: 0.5em 1.5em;
-  border: 0.1em solid #64FFDA;
+  border: 0.1em solid #64ffda;
   background-color: #0b192e;
   border-radius: 0.25em;
-  color:#ccd7f5;
+  color: #ccd7f5;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -80,7 +94,7 @@ body {
   cursor: pointer;
 }
 .resume-btn:hover {
-  background-color:	rgba(100, 255, 219, 0.051);
+  background-color: rgba(100, 255, 219, 0.051);
   transition: 0.4s;
 }
 .nav-content .nav-column:first-child {
@@ -219,6 +233,9 @@ body {
   .btn-wrapper {
     display: none;
     flex-direction: column;
+  }
+  .hamburger {
+    display: inline-block;
   }
 }
 @media (max-width: 600px) {
