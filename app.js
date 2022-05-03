@@ -176,7 +176,7 @@ hamburger.addEventListener("click", function () {
   if (navlist.classList.contains("is-active")) {
     navlist.classList.toggle("is-active");
     setTimeout(() => {
-      navlist.style.display = "none";
+      navlist.style.removeProperty("display");
     }, 500);
   } else {
     navlist.style.display = "flex";

@@ -62,11 +62,12 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   transition: opacity ease 0.5s;
 }
 .nav-li {
   display: flex;
-  padding-left: 2em;
+  margin-left: 2em;
 }
 .nav-link {
   text-decoration: none;
@@ -75,10 +76,6 @@ body {
 }
 .nav-link:hover {
   color: #ccd7f5;
-}
-.btn-wrapper {
-  display: flex;
-  padding-left: 2em;
 }
 .resume-btn {
   display: inline-block;
