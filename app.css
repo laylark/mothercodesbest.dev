@@ -11,6 +11,9 @@ body {
 .mt {
   margin-top: 2em;
 }
+.mb {
+  margin-bottom: 4em;
+}
 
 .fireworks {
   position: absolute;
@@ -138,6 +141,8 @@ body {
 }
 .about {
   width: 75%;
+  padding-top: 9.5em;
+  margin-top: -8em;
 }
 
 .main-end {
@@ -155,6 +160,25 @@ body {
   100% {
     margin-inline: 3em;
   }
+}
+
+#projects {
+  padding-top: 9.5em;
+  margin-top: -8em;
+  font-size: 1.5em;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-img {
+  width: 100%;
+}
+.project-link {
+  display: inline-block;
+  width: 33%;
+  max-width: 100%;
+  padding: 2em;
 }
 
 .footer {
@@ -249,10 +273,18 @@ body {
     display: inline-block;
     z-index: 100;
   }
+
+  .project-link {
+    width: 50%;
+  }
 }
 @media (max-width: 600px) {
   .main {
     padding: 10em 3em 2em 3em;
+  }
+
+  .project-link {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
