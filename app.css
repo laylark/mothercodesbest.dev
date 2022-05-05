@@ -163,8 +163,8 @@ body {
 }
 
 #projects {
-  padding-top: 9.5em;
-  margin-top: -8em;
+  padding-top: 6.5em;
+  margin-top: -5em;
   font-size: 1.5em;
 }
 .projects {
@@ -180,9 +180,22 @@ body {
   max-width: 100%;
   padding: 2em;
 }
+.project-img:hover {
+  opacity: 0.5;
+}
+
+#skills {
+  padding-top: 6.5em;
+  margin-top: -5em;
+  font-size: 1.5em;
+}
+.skills {
+  line-height: 2.5em;
+}
 
 .footer {
   display: flex;
+  justify-content: center;
   width: 100%;
   padding: 2em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -191,11 +204,13 @@ body {
 .footer-content {
   width: 100%;
 }
-.discover {
-  padding-left: 5em;
-}
 .connect {
   padding-right: 7em;
+  max-width: 40em;
+}
+#contact {
+  padding-top: 6.5em;
+  margin-top: -5em;
 }
 .footer-title {
   font-size: 2em;
