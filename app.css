@@ -51,6 +51,7 @@ body {
   position: fixed;
   width: 100%;
   overflow: hidden;
+  z-index: 4;
 }
 .nav-content {
   display: flex;
