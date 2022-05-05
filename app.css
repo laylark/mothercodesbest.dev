@@ -162,10 +162,12 @@ body {
   }
 }
 
-#projects {
-  padding-top: 6.5em;
-  margin-top: -5em;
+.project-header {
   font-size: 1.5em;
+}
+#projects {
+  padding-top: 13.5em;
+  margin-top: -13em;
 }
 .projects {
   display: flex;
@@ -174,7 +176,7 @@ body {
 .project-img {
   width: 100%;
 }
-.project-link {
+.project-tile {
   display: inline-block;
   width: 33%;
   max-width: 100%;
@@ -289,7 +291,7 @@ body {
     z-index: 100;
   }
 
-  .project-link {
+  .project-tile {
     width: 50%;
   }
 }
@@ -298,7 +300,7 @@ body {
     padding: 10em 3em 2em 3em;
   }
 
-  .project-link {
+  .project-tile {
     width: 100%;
   }
 }
@@ -318,6 +320,10 @@ body {
   .about {
     font-size: 1.5em;
     width: 100%;
+  }
+  .project-tile {
+    padding: 0;
+    margin-bottom: 2em;
   }
   .footer {
     flex-direction: column;
